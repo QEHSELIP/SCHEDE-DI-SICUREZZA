@@ -103,6 +103,82 @@ color: #777;
 padding: 20px;
 margin-top: 40px;
 }
+
+.document.scheda {
+  border-left: 6px solid #1a73e8;
+}
+
+.document.procedura {
+  border-left: 6px solid #2a9d8f;
+}
+
+.document.istruzioni {
+  border-left: 6px solid #ff5400;
+}
+
+.document a::after {
+  content: " (PDF)";
+  font-weight: normal;
+  color: #555;
+  font-size: 0.85em;
+}
+
+.document.scheda a {
+  color: #1a73e8;
+}
+
+.document.procedura a {
+  color: #2a9d8f;
+}
+
+.document.istruzioni a {
+  color: #ff5400;
+}
+
+/* Hover (stesso colore ma più scuro) */
+.document.scheda a:hover {
+  color: #134a9c;
+}
+
+.document.procedura a:hover {
+  color: #1f7a68;
+}
+
+.document.istruzioni a:hover {
+  color: #c74300;
+}
+
+.document a {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.03);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.document.scheda a {
+  background-color: rgba(26, 115, 232, 0.1);
+}
+
+.document.procedura a {
+  background-color: rgba(42, 157, 143, 0.1);
+}
+
+.document.istruzioni a {
+  background-color: rgba(255, 84, 0, 0.1);
+}
+
+.document.scheda a:hover {
+  background-color: rgba(26, 115, 232, 0.2);
+}
+
+.document.procedura a:hover {
+  background-color: rgba(42, 157, 143, 0.2);
+}
+
+.document.istruzioni a:hover {
+  background-color: rgba(255, 84, 0, 0.2);
+}
 </style>
 </head>
 
@@ -120,6 +196,9 @@ margin-top: 40px;
 
 <div class="search-box">
 <input type="text" id="searchInput" placeholder="Cerca per tipologia/nome prodotto chimico/istruzione o procedura….">
+<p style="color:#555; font-size:0.9em; margin-top:5px;">
+  Digita una parola chiave per filtrare l'elenco dei documenti
+</p>
 </div> 
 
 <div class="filter-buttons">
@@ -131,371 +210,371 @@ margin-top: 40px;
  <h1>SCHEDE DI SICUREZZA (SdS), ISTRUZIONI OPERATIVE DI SICUREZZA E PROCEDURE DI SICUREZZA – SELIP Spa</h1>
 <p>PAGINA IN REVISIONE N. 4 DEL 13/01/2026</p>
   <ul>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Accelerante">
 <a href="https://dl.dropboxusercontent.com/scl/fi/bfuxqxf6v1issbm6cy0ze/36_ACCELERATOR-NL-51PN-IT-IT.PDF?rlkey=ankwylnfpardgk9492z7s32v3&st=ecikwm3l&dl=1">ACCELERATOR NL-51PN</a>
 <span>Categoria: Accelerante</span>
 <span> Ultimo aggiornamento: Rev. 2.1 del 19/12/2022</span>
 </li> 
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Accelerante">
 <a href="https://dl.dropboxusercontent.com/scl/fi/yr1jxdxn2ykosca5muh8h/24_OTTOATO-COBALTO-AL-6-_eSDS_Rev.2_IT.pdf?rlkey=9t4hav0c2m96qbtuym0umgj39&st=23knq3t1&dl=1">OTTOATO COBALTO AL 6%</a>
 <span>Categoria: Accelerante</span>
 <span> Ultimo aggiornamento: Rev. 02 del 06/01/2024</span>
 </li> 
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Catalizzatore">
 <a href="https://dl.dropboxusercontent.com/scl/fi/1m4v9an3oin46ugww65xb/21_TRIGONOX-61-it-IT_IT.PDF?rlkey=60elaipy4sbs96rrcwmdd77zh&st=m7xoy7ih&dl=1">TRIGONOX 61</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 3 del 26/12/2022</span>
 </li> 
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Catalizzatore">
 <a href="https://dl.dropboxusercontent.com/scl/fi/aq0t4c2rmgg7eto6xg7yj/45_P200TX-PROMOX-MSDS.IT-REV.1-2024.PDF?rlkey=ijwhe8lval6kvozf5qt35weef&st=mwkyw11n&dl=1">PROMOX P200TX</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 1 del 09/10/2024</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Catalizzatore">
 <a href="https://dl.dropboxusercontent.com/scl/fi/zkejhe17b2gcrha1pzpc4/46_P202TX-PROMOX-MSDS.IT-REV.1-2024.PDF?rlkey=7hd8fni8tz28nilfwqu4e685c&st=2f5urrr4&dl=1">PROMOX P202TX</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 1 del 22/02/2024</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Catalizzatore">
 <a href="https://dl.dropboxusercontent.com/scl/fi/vbcqmvojy8o7x7cacdpff/48_P250TX-PROMOX-MSDS.IT-REV.1-2024.PDF?rlkey=feke4a6mz99wm4xf7vmkn877b&st=oopei9rw&dl=1">PROMOX P250TX</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 1 del 21/02/2024</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Catalizzatore">
 <a href="https://dl.dropboxusercontent.com/scl/fi/1koiqmatk8h85zseu1lck/3_LUPEROX-A75-E.pdf?rlkey=anj06zf91tvf8yjg9nmu7j08w&st=4yijqa2y&dl=1">LUPEROX A75</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 5 del 25/03/2022</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Catalizzatore">
 <a href="https://dl.dropboxusercontent.com/scl/fi/tr8kvn2py1ihm03uxbep4/4_BUTANOX-LPT-IN-IT-IT.PDF?rlkey=u69945mckjvrq2vq4tsbga32n&st=23wwvkjb&dl=1">BUTANOX LPT-IN</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 4 del 17/03/2022</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Catalizzatore">
 <a href="https://dl.dropboxusercontent.com/scl/fi/yr83r8zwbqikvr4456i8m/5_BUTANOX-M-50-IT-IT-1.PDF?rlkey=724jn5rmoa2dla6nrgybpqctz&st=88ke69sv&dl=1">BUTANOX M50</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 3 del 13/04/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Cera distaccante">
 <a href="https://dl.dropboxusercontent.com/scl/fi/ixvqh16h81526edg28c8m/30_Z-14-LC-distacc.pasta.PDF?rlkey=dm5ulp22madigit6apl3vcnwo&st=53cchj9k&dl=1">CERA Z14 LC</a>
 <span>Categoria: Cera distaccante</span>
 <span> Ultimo aggiornamento: Rev. 9 del 27/10/2022</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Cera distaccante">
 <a href="https://dl.dropboxusercontent.com/scl/fi/h6gdgrkewhvb75gpq3w0i/31_SDS_Chemlease_PMR-90_EZ_111664_IT_IT.pdf?rlkey=zllypgnd4uhw0rbqdhaoy8ga7&st=9fmllhht&dl=1">CHEMLEASE PMR-90</a>
 <span>Categoria: Cera distaccante Fondi</span>
 <span> Ultimo aggiornamento: Rev. 2.5 del 30/11/2022</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Cera distaccante fondi">
 <a href="https://dl.dropboxusercontent.com/scl/fi/v9tay01hgjp6eep9h5brn/32_SDS_Chemlease_15_Sealer_EZ_111663_IT2024.PDF?rlkey=hoiu50sau5m2f550d81k70k62&st=567o1jdi&dl=1">CHEMLEASE 15 SEALER EZ</a>
 <span>Categoria: Cera distaccante Fondi</span>
 <span> Ultimo aggiornamento: Rev. 2.7 del 28/10/2024</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Cera distaccante">
 <a href="https://dl.dropboxusercontent.com/scl/fi/dmtx40qj29clolnfl8aao/35_MSDS_46678_-it_IT_Release-Lacquer-PVA-Blue.pdf?rlkey=agdu3o9rn5su9g9irtrt2c7za&st=2qfmd5f1&dl=1">PVA BLU</a>
 <span>Categoria: Distaccante Polivinilico</span>
 <span> Ultimo aggiornamento: Rev. 5 del 30/03/2024</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Cera distaccante stampi">
 <a href="https://dl.dropboxusercontent.com/scl/fi/1p4flef6s9nuztz0wb0dp/53_TR-100-Mold-Release-SDS_ITALY-Italian_.pdf?rlkey=814vv7rxpfaua5gzfqk5rflj3&st=cp5dxey4&dl=1">TR-104</a>
 <span>Categoria: Distaccante per stampi</span>
 <span> Ultimo aggiornamento: Rev. 3 del 25/05/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Fibra di vetro">
 <a href="https://dl.dropboxusercontent.com/scl/fi/em1dp3zmjqhyz52s64gox/15_TSIS-T-1772-IT-2023-07.pdf?rlkey=g6szfvdmmer26x2bm31anaq54&st=nh8084w9&dl=1">FIBRA DI VETRO T 1772</a>
 <span>Categoria: Fibra di Vetro</span>
 <span> Ultimo aggiornamento: Rev. 3 del 06/07/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Fibra di vetro">
 <a href="https://dl.dropboxusercontent.com/scl/fi/slgwyick812v9chb7chg4/16_TSIS-T-1773-IT-2023-05.pdf?rlkey=cld2xplm60a0aczgxsx603hmw&st=pn9qzf2h&dl=1">FIBRA DI VETRO T 1773</a>
 <span>Categoria: Fibra di Vetro</span>
 <span> Ultimo aggiornamento: Rev. 3 del 31/05/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Fibra di vetro">
 <a href="https://dl.dropboxusercontent.com/scl/fi/oh3b2n4zo8gc1jembjmun/17_TSIS-T-1776-C-IT-2023-07.pdf?rlkey=vkyr14be0ntmsmudwd34zbob3&st=tlzv1rgj&dl=1">FIBRA DI VETRO T 1776 C</a>
 <span>Categoria: Fibra di Vetro</span>
 <span> Ultimo aggiornamento: Rev. 3 del 06/07/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Fibra di vetro">
 <a href="https://dl.dropboxusercontent.com/scl/fi/10k5t2dfmu3ye7ww884vu/18_TSIS-T-1791-C-IT-2023-07.pdf?rlkey=mqoo0cydzlgijbpvrzw7jtvkb&st=hxwwqwb0&dl=1">FIBRA DI VETRO T 1791 C</a>
 <span>Categoria: Fibra di Vetro</span>
 <span> Ultimo aggiornamento: Rev. 2 del 06/07/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Fibra di vetro">
 <a href="https://dl.dropboxusercontent.com/scl/fi/s1juva5xnjun9cpo9llgb/19_TSIS-T-1777-C-IT-2023-05.pdf?rlkey=55e0rab7vv3x9uzvy5mnc8yzd&st=5jhp0181&dl=1">FIBRA DI VETRO T 1777 C</a>
 <span>Categoria: Fibra di Vetro</span>
 <span> Ultimo aggiornamento: Rev. 3 del 31/05/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Fibra di vetro">
 <a href="https://dl.dropboxusercontent.com/scl/fi/yg9avs1z8qsz815uoih6j/20_TSIS-T-1790-C-IT-2024-08.pdf?rlkey=h9uu5oehstss3zum4ie61rw2n&st=8my8gsgo&dl=1">FIBRA DI VETRO T 1790 C</a>
 <span>Categoria: Fibra di Vetro</span>
 <span> Ultimo aggiornamento: Rev. 3 del 12/08/2024</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Carburante per gru mobile">
 <a href="https://dl.dropboxusercontent.com/scl/fi/zlux2yjw8m555p36x3ppc/50_Gasolio_Quaser_IT_05.pdf?rlkey=9rz573w541mjcsk4b13ihbm08&st=93duhhft&dl=1">DIESEL</a>
 <span>Categoria: Gasolio per gru mobile</span>
 <span> Ultimo aggiornamento: Rev. 5 del 19/06/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Top Coat">
 <a href="https://dl.dropboxusercontent.com/scl/fi/a2wt49e42gg2ypnpgg2i5/11_4838.SDS-Annex-II-2020878-Atp-18-.it.26.0.pdf?rlkey=dq5cu0v8pcswwsxx9smx83lg3&st=0ihtnxrv&dl=1">LAVECOAT SERIE IO</a>
 <span>Categoria: Top Coat</span>
 <span> Ultimo aggiornamento: Rev. 26 del 18/01/2024</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Top Coat">
 <a href="https://dl.dropboxusercontent.com/scl/fi/bgffefmxqsibj6i4do6ed/12_4904.SDS-Annex-II-2020878-Atp-18-.it.14.0.pdf?rlkey=hvzw3v2f6yk9n5ez1yfeprgqn&st=z8undbzm&dl=1">LAVECOAT SERIE SE</a>
 <span>Categoria: Top Coat</span>
 <span> Ultimo aggiornamento: Rev. 14 del 19/01/2024</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Gel Coat">
 <a href="https://dl.dropboxusercontent.com/scl/fi/4yoeelnk6017uszhm288n/27a_SDSGEL_020-022_7-NERI_REV_9_2025_IT.pdf?rlkey=2jed9q7ht7kq3zzsp2a3vgjy9&st=6oigytdu&dl=0">GELCOAT 020-022 GRIGI E NERI</a>
 <span>Categoria: Gel Coat</span>
 <span> Ultimo aggiornamento: Rev. 9 del 01/09/2025</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Gel Coat">
 <a href="https://dl.dropboxusercontent.com/scl/fi/kqfja3hyxzmxohl3bu64r/27b_SDSGEL_000-005-007_7_NERI_REV_9_2025_IT.pdf?rlkey=ns7ujlhvz2artust09iz8e8n1&st=09hyefw0&dl=0">GELCOAT 000-005-007 GRIGI E NERI</a>
 <span>Categoria: Gel Coat</span>
 <span> Ultimo aggiornamento: Rev. 9 del 01/09/2025</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Gel Coat">
 <a href="https://dl.dropboxusercontent.com/scl/fi/sf1tyyh304js1n566fmqx/27c_SDSGEL_020-022_M_5-6_REV_9_2025_IT.pdf?rlkey=nmbdystrddvs32n97xkwr69z6&st=t771sozx&dl=0">GELCOAT 020-022 BLEU E VERDI</a>
 <span>Categoria: Gel Coat</span>
 <span> Ultimo aggiornamento: Rev. 9 del 01/09/2025</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Gel Coat">
 <a href="https://dl.dropboxusercontent.com/scl/fi/5j4874cifvjzpcsy3x8b8/27d_SDSGEL_020-022_M_9-9500-9600_REV_9_2025_IT.pdf?rlkey=dci1kqxy0hm5gtps1qjl4c4py&st=t95e2e54&dl=0">GELCOAT 020-022 BIANCHI E TRASPARENTI</a>
 <span>Categoria: Gel Coat</span>
 <span> Ultimo aggiornamento: Rev. 9 del 01/09/2025</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Gel Coat">
 <a href="https://dl.dropboxusercontent.com/scl/fi/ecvvdfhi5chsx6xv6qb1b/27e_SDSGEL_025-026_M_9_9500_9600_REV_9_2025_IT.pdf?rlkey=1afxxi6b7nl5ke28uoj2o2kbh&st=k3neblxk&dl=0">GELCOAT 025-026 BIANCHI E TRASPARENTI</a>
 <span>Categoria: Gel Coat</span>
 <span> Ultimo aggiornamento: Rev. 9 del 12/12/2025</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Mastice">
 <a href="https://dl.dropboxusercontent.com/scl/fi/9uhu4sephvoybrjm3uhyl/39_SDS_CRESTOMER-1152_IT.pdf?rlkey=f0itl0a4lkegva4povanudq4i&st=9s7rmdpy&dl=1">CRESTOMER 1152</a>
 <span>Categoria: Mastice</span>
 <span> Ultimo aggiornamento: Rev. 5.04 del 23/11/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Mastice">
 <a href="https://dl.dropboxusercontent.com/scl/fi/jf6ts4reoqkcn2u891h5h/27f_SDSMAS_060_REV_9_2025_IT.pdf?rlkey=oanf5wbj09fl8nrcrio78pvfz&st=mtf6jdox&dl=0"> POLY3 060</a>
 <span>Categoria: Mastice</span>
 <span>Ultimo aggiornamento: Rev. 9 del 01/09/2025</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Mastice">
 <a href=" https://dl.dropboxusercontent.com/scl/fi/or76qgqjl3cx2xt5chdxc/37_3412.SDS-Annex-II-2020878-Atp-18-.it.11.0.pdf?rlkey=n7s0weaij9pctal5pw5ivdfpa&st=u8vcc76l&dl=1"> LAVESTUC R.490 ISO</a>
 <span>Categoria: Mastice</span>
 <span>Ultimo aggiornamento: Rev. 11 del 25/09/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Pannelli per isolamento termico">
 <a href=" https://dl.dropboxusercontent.com/scl/fi/09ll9yin4gpopu5dakykg/38_POLIURETANO.pdf?rlkey=0kn6h95kil7p6quyolac33dlu&st=0jnhzsin&dl=1"> PANNELLI IN POLIURETANO ESPANSO RIGIDO</a>
 <span>Categoria: Pannelli in poliuretano espanso rigido</span>
 <span>Ultimo aggiornamento: Rev. C del 17/05/2018</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Promotore/Amminico">
 <a href="https://dl.dropboxusercontent.com/scl/fi/vr8o0n730tpnew9s437hn/23_PROMOX-DEAA-I-IDS.pdf?rlkey=q5v0jmfj21sztyvlmfbemhi7w&st=ho66qseu&dl=1">DEAA</a>
 <span>Categoria: Promotore/Amminico</span>
 <span>Ultimo aggiornamento: Rev. 1 del 01/02/2022</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Promotore/Amminico">
 <a href="https://dl.dropboxusercontent.com/scl/fi/01etsdygphu944211jj3g/6_MSDS_DEA.pdf?rlkey=r8hras82l0vtela96tpv0uo1l&st=cdz0nlun&dl=1">DEA</a>
 <span>Categoria: Promotore/Amminico</span>
 <span>Ultimo aggiornamento: Rev. 1 del 01/02/2022</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Pulitore strumenti di lavoro">
 <a href="https://dl.dropboxusercontent.com/scl/fi/yohfntbzhfxzx39qkxufj/28b_THERMACLEAN-UNISOLVE-EX-REV.3-30.12.2022.pdf?rlkey=5q6yid2aar424ufq1309ak0w6&st=7wdd7tfa&dl=1"> PULITORE STRUMENTI DI LAVORO (VASCONE SAFETYKLEEN) - THERMACLEAN UNISOLVE EX </a>
 <span>Categoria: Solvente per attrezzi</span>
 <span>Ultimo aggiornamento: Rev. 3 del 30/12/2022</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Quarzo">
 <a href="https://dl.dropboxusercontent.com/scl/fi/qxjntyy1nnrpptbuqxb0o/34_SILBOND_W12MST.pdf?rlkey=ab34cwyvphtjddzkl9zhfojdh&st=j1fcv624&dl=1">QUARZO</a>
 <span>Categoria: Solvente per attrezzi</span>
 <span>Ultimo aggiornamento: Rev. 1.1 del 01/10/2024</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Resina">
 <a href="https://dl.dropboxusercontent.com/scl/fi/kbnn199i9gbvfsp11pfpr/1_SDS_ATLAC-382-A.pdf?rlkey=x155u2odai2rbfz9bikacc3vg&st=n9kssqln&dl=1">ATLAC 382A</a>
 <span>Categoria: Resina</span>
 <span>Ultimo aggiornamento: Rev. 20.01 del 10/05/2024</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Resina">
 <a href="https://dl.dropboxusercontent.com/scl/fi/1xpbpwzntp9x9h4y3otzd/2_SDS_Atlac-5200-FC.pdf?rlkey=r5qfzf2n7s76xh2iok57cepml&st=er40sc5x&dl=1">ATLAC 5200 FC</a>
 <span>Categoria: Resina</span>
 <span>Ultimo aggiornamento: Rev. 20.1 del 17/05/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Resina">
 <a href="https://dl.dropboxusercontent.com/scl/fi/pt2824qga9fgq7f0vvdbq/7_DERAKANE-MOMENTUM-411-350-RESN-IBCE14.PDF?rlkey=imtxefr2vzdxhy1jg22bow6bj&st=vxya0l3x&dl=0">DERAKANE MOMENTUM 411-350</a>
 <span>Categoria: Resina</span>
 <span>Ultimo aggiornamento: Rev. 6.1 del 10/07/2025</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Resina">
 <a href="https://dl.dropboxusercontent.com/scl/fi/u6p7ajmlj85yv2pjjlwqq/8_DERAKANE-MOMENTUM-470-300-RESIN-IBCE14.PDF?rlkey=pb9rvcw9cz1d1bercmfylljsu&st=w5s43cwb&dl=0"> RESINA DERAKANE MOMENTUM 470-300</a>
 <span>Categoria: Resina</span>
 <span>Ultimo aggiornamento: Rev. 8.3 del 10/07/2025</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Resina">
 <a href="https://dl.dropboxusercontent.com/scl/fi/y12xc4hxrbi6g8r6x7k4j/14_SDS_Synolite-0179-N-1.pdf?rlkey=9pdtsgrie9g72f5nvwktvh0nr&st=dcepqgs5&dl=1"> RESINA SYNOLITE 0179-N-1</a>
 <span>Categoria: Resina</span>
 <span>Ultimo aggiornamento: Rev. 20.1 del 10/05/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Resina">
 <a href="https://dl.dropboxusercontent.com/scl/fi/5hpipl31gld5j6uu5rtpf/25_SW-901-CHEMPULSE-SDS-IT-202110-UFI.pdf?rlkey=7kdbzshokf4c04pav4jz6nezt&st=7fmuhmve&dl=1"> RESINA CHEMPULSE 901</a>
 <span>Categoria: Resina</span>
 <span>Ultimo aggiornamento: Rev. 1 del 18/10/2021</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Resina">
 <a href="https://dl.dropboxusercontent.com/scl/fi/9cj5wj4qmvtwlwyusqob1/26_SW-907-CHEMPULSE-SDS-IT-202110-UFI.pdf?rlkey=wn3mr5s0hovgmad070shf4iwc&st=uxnmbm3n&dl=1"> RESINA CHEMPULSE 907</a>
 <span>Categoria: Resina</span>
 <span>Ultimo aggiornamento: Rev. 1 del 18/10/2021</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Resina">
 <a href="https://dl.dropboxusercontent.com/scl/fi/2vi39d88j3wzi2ogcmwd6/49_SDS_Atlac-430.pdf?rlkey=za59wy2ufhc8nimdegxoln99z&st=s9gwoonr&dl=1">ATLAC 430</a>
 <span>Categoria: Resina</span>
 <span>Ultimo aggiornamento: Rev. 20.2 del 17/05/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Resina">
 <a href="https://dl.dropboxusercontent.com/scl/fi/fxzw55zoczawiear3954q/54_AROPOL-PTM-390-ENV-RESIN-BULK-Italian.pdf?rlkey=zekcja1a1qge2vcf9p1y77uxb&st=eg0k9919&dl=0">AROPOL PTM 390 ENV</a>
 <span>Categoria: Resina</span>
 <span>Ultimo aggiornamento: Rev. 1 del 29/10/2025</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Resina">
 <a href="https://dl.dropboxusercontent.com/scl/fi/xheg0mfue65gcqoix8pdg/56_LAFFAN_TRADUZIONE.pdf?rlkey=14hc9yas45h01d5sj4zh5mb5l&st=xele7qgy&dl=1">RLPOL022-V RESINA LAFFAN</a>
 <span>Categoria: Resina</span>
 <span>Ultimo aggiornamento: Rev. 2 del 12/02/2023</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Stirolo">
 <a href="https://dl.dropboxusercontent.com/scl/fi/jzgm7z2349j0zn476idq9/29_SDS_IT_STIROLO-MONOMERO_VER.2_10389.pdf?rlkey=hp77re3vvquxw341dn1zb40sl&st=eyqpwzf8&dl=1">STIROLO MONOMERO</a>
 <span>Categoria: Stirolo</span>
 <span>Ultimo aggiornamento: Rev. 1 del 26/08/2022</span>
 </li>
-<li class="document" 
+<li class="document scheda" 
     data-type="schede"
     data-search="Silice">
 <a href="https://dl.dropboxusercontent.com/scl/fi/s650e2hmhh7wyjo1fk537/33_BLACKCAT-SDS-SILICE-HM200.pdf?rlkey=yy9nlfehd679k9sn4wya5evug&st=5rozsmt3&dl=1">SILICE MICRONIZZATA</a>
 <span>Categoria: Silice</span>
 <span>Ultimo aggiornamento: Rev. 1 del 23/03/2020</span>
 </li>
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Recapiti aziendali">
 <a href="https://dl.dropboxusercontent.com/scl/fi/5r6pnatadd6cgkr9nw47j/IOS_0_RECAPITI_AZIENDALI.pdf?rlkey=v7yaae12x9cau4br3ovlob2t5&st=fq9hff4c& dl=0">IOS_0 - RECAPITI_AZIENDALI </a>
 <span>Categoria: Istruzione di lavoro</span>
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Preparazioni mescole">
 <a href="https://dl.dropboxusercontent.com/scl/fi/px9nhhs8e0z7e2j4rnvgy/IOS_1_PREPARAZIONE_MESCOLE.pdf?rlkey=n4uypuctra5kvsegqaehm5o7s&st=i7ad7kwm&dl=0">IOS_1 - PREPARAZIONE_MESCOLE </a>
 <span>Categoria: Istruzione di lavoro</span>
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Costruzione liner">
 <a href="https://dl.dropboxusercontent.com/scl/fi/pz8odw1s5j75atpdlmaf9/IOS_2_COSTRUZIONE_LINER.pdf?rlkey=o9tks6bk5qyu31fapcf0sbix7&st=v2pp7qn7&dl=0">IOS_2 - COSTRUZIONE_LINER </a>
 <span>Categoria: Istruzione di lavoro</span>
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Costruzione fondi">
 <a href="https://dl.dropboxusercontent.com/scl/fi/0cgrk493mpg5nw06kz3yj/IOS_3_FONDI.pdf?rlkey=dp11aa0a5j0jxvf80nppiclr5&st=xi0qqngw&dl=0">IOS_3 - FONDI </a>
 <span>Categoria: Istruzione di lavoro</span>
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Taglia spruzzo">
 <a href="https://dl.dropboxusercontent.com/scl/fi/10h7cx6tqsqo548nl6qzu/IOS_4_TAGLIO_SPRUZZO.pdf?rlkey=nqugl6whi37rhcrzycu3n9qac&st=jsk6armr&dl=0">IOS_4 - TAGLIO_SPRUZZO </a>
@@ -503,7 +582,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Assemblaggio">
 <a href="https://dl.dropboxusercontent.com/scl/fi/vwruy6560j28m3ib8vskf/IOS_5_ASSEMBLAGGIO.pdf?rlkey=jq9q1w98chu360nva6e6atmra&st=srnvtrzg&dl=0">IOS_5 - ASSEMBLAGGIO </a>
@@ -511,7 +590,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 08/01/2026</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Avvolgimenti">
 <a href="https://dl.dropboxusercontent.com/scl/fi/emh2vlvzciv19r3pssxnf/IOS_6_AVVOLGIMENTO.pdf?rlkey=qkvr556gnav2b0cqolyp59gz1&st=9959ucjw&dl=0">IOS_6 - AVVOLGIMENTO </a>
@@ -519,7 +598,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Avvolgitrice">
 <a href="https://dl.dropboxusercontent.com/scl/fi/wjucgjw18x8poyj74b5a6/IOS_7_AVVOLGITRICE.pdf?rlkey=ilekgg3v3ir5lvt4orgl8ag4h&st=mxskgd1u&dl=0">IOS_7 - AVVOLGITRICE </a>
@@ -527,7 +606,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Sgrezzatura">
 <a href="https://dl.dropboxusercontent.com/scl/fi/kid1la9pnk7e9zwir47ff/IOS_8_SGREZZATURA.pdf?rlkey=ibmsug3whaicibg1989pddwz3&st=2h0qh2di&dl=0">IOS_8 - SGREZZATURA</a>
@@ -535,7 +614,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Rullatura">
 <a href="https://dl.dropboxusercontent.com/scl/fi/w72zmx8gs22oeziio4j7a/IOS_9_RULLATURA.pdf?rlkey=hpqm3j5e3hd68nne651a8pg5p&st=m30fct5z&dl=0">IOS_9 - RULLATURA</a>
@@ -543,7 +622,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Montaggio accessori">
 <a href="https://dl.dropboxusercontent.com/scl/fi/aojymr601vj4wenwgfa5h/IOS_10_MONTAGGIO_ACCESSORI.pdf?rlkey=9i92foy3bjjlje67r215xzrse&st=c2trvbcr&dl=0">IOS_10 – MONTAGGIO ACCESSORI</a>
@@ -551,7 +630,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Verniciatura">
 <a href="https://dl.dropboxusercontent.com/scl/fi/b5joiedkvmt5javmd2juf/IOS_11_VERNICIATURA.pdf?rlkey=jgjpygj8y7skjqwx2s98lohiz&st=shpdhiw2&dl=0">IOS_11 – VERNICIATURA</a>
@@ -559,7 +638,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Pompa Gelcoat">
 <a href="https://dl.dropboxusercontent.com/scl/fi/ng27fs6lijy8814fme0z8/IOS_12_POMPA_GELCOAT.pdf?rlkey=i8iyxz0p7zsbp9b1cvscr6eia&st=y9r1geqk&dl=0">IOS_12 – POMPA_GELCOAT</a>
@@ -567,7 +646,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Carrelli porta fusti">
 <a href="https://dl.dropboxusercontent.com/scl/fi/u3rq4g00rd3sz55m0wfir/IOS_13_CARRELLI_PF.pdf?rlkey=lo2eb3040numrobyearjk53t3&st=xvhs2tg4&dl=0">IOS_13 – CARRELLI PORTA FUSTI</a>
@@ -575,7 +654,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Bindello">
 <a href="https://dl.dropboxusercontent.com/scl/fi/u6la20nirgau1u3f2n5fv/IOS_14_BINDELLO.pdf?rlkey=kbzji3z7j20wnov1k80zvfxkc&st=xb1genz6&dl=0">IOS_14 – BINDELLO</a>
@@ -583,7 +662,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Officina">
 <a href="https://dl.dropboxusercontent.com/scl/fi/d3t920twyd42ym1q5vm8s/IOS_15_01_OFFICINA.pdf?rlkey=rk9miodh72cp75b8fd4vvpaqa&st=9pcy33vj&dl=0">IOS_15 – OFFICINA</a>
@@ -591,7 +670,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Lavaggio attrezzi">
 <a href="https://dl.dropboxusercontent.com/scl/fi/iwk7l2cq0jb17fgb09ngt/IOS_16_LAVAGGIO_ATTREZZI.pdf?rlkey=a3af61vdtiuw8cszajby6czbg&st=7bs3f88v&dl=0">IOS_16 – LAVAGGIO ATTREZZATURE</a>
@@ -599,7 +678,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Interventi service">
 <a href="https://dl.dropboxusercontent.com/scl/fi/4zqgk859vhk1y6ol2h51s/IOS_17_INTERVENTI_ESTERNI.pdf?rlkey=i965wxan9zfo0zk9gyq4ctjwy&st=m456t66x&dl=0">IOS_17 – INTERVENTI SERVICE (ESTERNO)</a>
@@ -607,7 +686,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Informativa accesso stabilimenti">
 <a href="https://dl.dropboxusercontent.com/scl/fi/nxlcul003ucb2v66d17p9/IOS_18_COMPORTAMENTO_ESTERNI.pdf?rlkey=vxrcq2uy65xiv1hz9y2r5eo0j&st=8mi7zpkp&dl=0">IOS_18 – INFORMATIVA ACCESSO STABILIMENTI</a>
@@ -615,7 +694,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 14/03/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Utilizzo Lavaocchi">
 <a href="https://dl.dropboxusercontent.com/scl/fi/gyotun5fniiekz4mbrgxy/IOS_19_UTILIZZO-LAVAOCCHI-DI-EMERGENZA.pdf?rlkey=p8hq8r2oankv0c8quhzy01nca&st=gzoe3knv&dl=0">IOS_19 – UTILIZZO LAVAOCCHI DI EMERGENZA</a>
@@ -623,7 +702,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li> 
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Svuotamento E2 (solo fontanellato)">
 <a href="https://dl.dropboxusercontent.com/scl/fi/3og3g5d35a7gnwgx41po4/IOS_20_SVUOTAMENTO-SERBATOIO-E2.pdf?rlkey=9jn8i1gujcelscbmqe3mpkr5u&st=bn68aabe&dl=0">IOS_20 – SVUOTAMENTO PUNTO DI EMISSIONE E2 (Solo sede Fontanellato)</a>
@@ -631,7 +710,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document istruzioni"
     data-type="istruzioni"
     data-search="Estratto PEE Evacuazione Stabilimento">
 <a href="https://dl.dropboxusercontent.com/scl/fi/dkfee0jb4q1shql056exm/IOS_21_ESTRATTO_PEE_EVACUAZIONE_STABILIMENTO.pdf?rlkey=2fu314mqkos2uo4nuiy0tbb1d&st=6dutj9kj&dl=0">IOS_21 – ESTRATTO PEE (EVACUAZIONE STABILIMENTO) (Solo sede Fontanellato)</a>
@@ -639,7 +718,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Guida automezzi aziendali">
 <a href="https://dl.dropboxusercontent.com/scl/fi/ju7a3frzx7ur0jgr8o27c/PS_1_GUIDA_AUTOMEZZI_AZIENDALI.pdf?rlkey=arvvjyf9y5sbcke2rpg2fg9rg&st=d0gvfhlb&dl=0">PS_1 – GUIDA AUTOMEZZI AZIENDALI</a>
@@ -647,7 +726,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Imbracatura dei carichi">
 <a href="https://dl.dropboxusercontent.com/scl/fi/5gfliygl1qr8d10dc2dsn/PS_2_IMBRACATURA_DEI_CARICHI.pdf?rlkey=f3sua2qdxdjowfc8e3m8rwp3j&st=bo33mgja&dl=0">PS_2 – IMBRACATURA DEI CARICHI</a>
@@ -655,7 +734,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Informativa lavoratrici madri">
 <a href="https://dl.dropboxusercontent.com/scl/fi/3trx0xubum603thv6tph1/PS_3_INFORMATIVA_LAVORATRICI_MADRI.pdf?rlkey=rsge41g91gso6okrp7h5iine1&st=mk4zh4ul&dl=0">PS_3 – INFORMATIVA LAVORATRICI MADRI</a>
@@ -663,7 +742,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Lavori in quota">
 <a href="https://dl.dropboxusercontent.com/scl/fi/fdlza2hmnacckfuit0kxk/PS_4_LAVORI_IN_QUOTA.pdf?rlkey=njrj787oi7bd771g4c69gljm4&st=qdfv0eza&dl=0">PS_4 – LAVORI IN QUOTA</a>
@@ -671,7 +750,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Movimentazione Manuale dei Carichi">
 <a href="https://dl.dropboxusercontent.com/scl/fi/dbiuw2r2lc3yscapygodc/PS_5_MMC.pdf?rlkey=6lpws4ly3cprh32wu5mcgb14e&st=c0b7r83w&dl=0">PS_5 – MMC – MOVIMENTAZIONE MANUALE DEI CARICHI</a>
@@ -679,7 +758,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Carrelli elevatori">
 <a href="https://dl.dropboxusercontent.com/scl/fi/ck1nx1su81f9e3jorfrjd/PS_6_CARRELLI_ELEVATORI.pdf?rlkey=gm7t1kamr81k1gk8uktb4xsl2&st=xmdl5hy1&dl=0">PS_6 – CARRELLI ELEVATORI</a>
@@ -687,7 +766,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Ricarica Batterie Carrello Elevatore">
 <a href="https://dl.dropboxusercontent.com/scl/fi/m9hr9ivgb7b5cjf6xp03n/PS_7_RICARICA_BATTERIE.pdf?rlkey=e65i5uazpmpehbd8iywxyitf6&st=ug3my03f&dl=0">PS_7 – RICARICA BATTERIE CARRELLO ELEVATORE</a>
@@ -695,7 +774,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Smerigliatrice">
 <a href="https://dl.dropboxusercontent.com/scl/fi/o39de0tqyg5q07hvwwoev/PS_8_SMERIGLIATRICE.pdf?rlkey=o6abtonctfl9zf5a8i9th20uy&st=vh5x87x3&dl=0">PS_8 – SMERIGLIATRICE</a>
@@ -703,7 +782,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Spazi confinati">
 <a href="https://dl.dropboxusercontent.com/scl/fi/tfrpy5tzubpy1crdqzjx2/PS_9_SPAZI_CONFINATI.pdf?rlkey=e9bjeptzqoog4o1sbhjwsdv6n&st=hq7kif3t&dl=0">PS_9 – *SPAZI CONFINATI*</a>
@@ -711,7 +790,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 17/12/2024</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Carroponte">
 <a href="https://dl.dropboxusercontent.com/scl/fi/4sbp2h881xeff48osaoh3/PS_10_CARROPONTE_REV.01.pdf?rlkey=tek243k4iluwy7wqj3i6vorl8&st=d2stuh8d&dl=0">PS_10 – CARROPONTE</a>
@@ -719,7 +798,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 03/03/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Gru Mobile">
 <a href="https://dl.dropboxusercontent.com/scl/fi/mi7gh4qq9oki0n1l2yoe8/PS_11_GRU_MOBILE.pdf?rlkey=g74vbkmq3k7a2st333xlw5kpf&st=ezfyt8du&dl=0">PS_11 – GRU MOBILE</a>
@@ -727,7 +806,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="PLE">
 <a href="https://dl.dropboxusercontent.com/scl/fi/nrofs58cctn1dpwvzfraa/PS_12_PLE.pdf?rlkey=21wtudz8xfvxpcktrjesx0whu&st=g2fqkjff&dl=0">PS_12 – PLE</a>
@@ -735,7 +814,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Scala a castello">
 <a href="https://dl.dropboxusercontent.com/scl/fi/gli3xbkn0ig3fj5t1eecf/PS_13_SCALA_A_CASTELLO.pdf?rlkey=e5u1sme4nffk337bvc7sxvfnp&st=3rn5s1dk&dl=0">PS_13 – SCALA A CASTELLO</a>
@@ -743,7 +822,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Videoterminale">
 <a href="https://dl.dropboxusercontent.com/scl/fi/l5xdx5qrti4wrvza5668g/PS_14_VIDEOTERMINALE.pdf?rlkey=q5zjbfrrp6k32wibur42ml14t&st=mta67akt&dl=0">PS_14 – VIDEOTERMINALE</a>
@@ -751,7 +830,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Alcool e stupefacenti">
 <a href="https://dl.dropboxusercontent.com/scl/fi/knsbdo0xrvf43qlg6ysgg/PS_15_ALCOOL_E_STUPEFACENTI.pdf?rlkey=cejjermbelks2lq4zcfckrhwo&st=2y11qkxf&dl=0">PS_15 – UTILIZZO ALCOOL E STUPEFACENTI</a>
@@ -759,7 +838,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Scale a mano">
 <a href="https://dl.dropboxusercontent.com/scl/fi/zhxu9fhidiwb0ja4elmpe/PS_16_SCALE.pdf?rlkey=2szxcaa29on2bd7qinc2fzx5e&st=qrodz354&dl=0">PS_16 – SCALE A MANO</a>
@@ -767,7 +846,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Transpallet manuale">
 <a href="https://dl.dropboxusercontent.com/scl/fi/kka5o0a5mk8qf9qy113tg/PS_17_TRANSPALLET_MANUALE.pdf?rlkey=ovnmo39b9e7yg371022o5lixk&st=3inxgcd3&dl=0">PS_17 – TRANSPALLET MANUALE</a>
@@ -775,7 +854,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 31/01/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Utensili manuali o pneumatici">
 <a href="https://dl.dropboxusercontent.com/scl/fi/6ptinytyo9w7lqwu25fcz/PS_18_UTENSILI_MAN_E_PNEUMATICI.pdf?rlkey=ptgktdp5da8mz54hfh36zi6cp&st=ks02ox2y&dl=0">PS_18 – UTENSILI MANUALI O PNEUMATICI</a>
@@ -783,7 +862,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Punture di insetto">
 <a href="https://dl.dropboxusercontent.com/scl/fi/14cpilp40voa3wookawgj/PS_19_PUNTURE_DI_INSETTO.pdf?rlkey=v878tg2ive81zb1vdz73jndri&st=eezg0c7p&dl=0">PS_19 – PUNTURE DI INSETTO</a>
@@ -791,7 +870,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 07/07/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Lettura schede di sicurezza">
 <a href="https://dl.dropboxusercontent.com/scl/fi/ppezj3i6hmvvldo44kuko/PS_20_LETTURA-SDS.pdf?rlkey=2sm0v470nsqcsbmrjthzxipd4&st=def9uq6p&dl=0">PS_20 – LETTURA SCHEDE DI SICUREZZA DEI PRODOTTI CHIMICI (SdS)</a>
@@ -799,7 +878,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Whistleblowing">
 <a href="https://dl.dropboxusercontent.com/scl/fi/urrs3iqgjdy55w3t4982g/PS_21_PROCEDURA_WHISTLEBLOWING.pdf?rlkey=ayoczbnz2akpddo7o6a3vja3g&st=pphz0hj8&dl=0">PS_21 – WHISTLEBLOWING</a>
@@ -807,7 +886,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Contenuto armadio antincendio">
 <a href="https://dl.dropboxusercontent.com/scl/fi/7fy1hg6viq5ql91fg00g5/PS_22_CONTENUTO_ARMADIO_ANTINCENDIO_FONT.pdf?rlkey=lij5tld1x0ewl5amczw985urx&st=yr6yee58&dl=0">PS_22 – CONTENUTO ARMADIO ANTINCENDIO (Stab Fontanellato)</a>
@@ -815,7 +894,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Contenuto cassetta di primo soccorso">
 <a href="https://dl.dropboxusercontent.com/scl/fi/loro3s16l1do745i4yw4h/PS_23_CONTENUTO_E_USO_CASSETTA_PRIMO_SOCCORSO.pdf?rlkey=93a1btmmz2pkf5ejnzoma9win&st=wdyz0u9o&dl=0">PS_23 – CONTENUTO ED USO CASSETTA DI PRIMO SOCCORSO</a>
@@ -823,7 +902,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Ergonomia in smartworking">
 <a href="https://dl.dropboxusercontent.com/scl/fi/z3n5k0i6qzd3kzv13is63/PS_24_ERGONOMIA_SMARTWORKING.pdf?rlkey=4oel2m71rabp3mbrvn7hdm9ha&st=6p08bv1w&dl=0">PS_24 – ERGONOMIA E SMARTWORKING</a>
@@ -831,7 +910,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li>
 </li> 
-<li class="document"
+<li class="document procedura"
     data-type="procedure"
     data-search="Aggressioni e molestie">
 <a href="https://dl.dropboxusercontent.com/scl/fi/1troxcy330cw7q1lea5dj/PS_25_AGGRESSIONI_E_MOLESTIE.pdf?rlkey=8wnzws25afq4ivx55gr77yw6z&st=rj9os6xc&dl=0">PS_25 – AGGRESSIONI E MOLESTIE</a>
@@ -839,7 +918,7 @@ margin-top: 40px;
 <span> Ultimo aggiornamento: 29/10/2025</span>
 </li>
 </ul>
-<p>Questa pagina viene aggiornata ad ogni variazione delle Schede di Sicurezza, procedure e istruzioni di lavoro in stabilimento per garantire l'accesso alle versioni più recenti disponibili.</p>
+<p>Questa pagina viene aggiornata ad ogni variazione delle Schede di Sicurezza in stabilimento per garantire l'accesso alle versioni più recenti disponibili.</p>
 <p> Si ricorda, per tutta la documentazione presente, che è a disposizione anche all'interno dei pc di reparto, sul desktop. Per dubbi o chiarimenti contattare Domenico Federico (0521824222 int. 6222 o mail d.federico@selip.it) o Giulio De Giorgio (0521824223 int. 6223) o </p>
 <footer>
 Documento di proprietà SELIP Spa – Accesso riservato ai lavoratori
@@ -849,6 +928,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("searchInput");
   const documents = document.querySelectorAll(".document");
   const buttons = document.querySelectorAll(".filter-btn");
+  const resultCount = document.getElementById("resultCount");
 
   let activeFilter = "all";
 
@@ -865,7 +945,14 @@ document.addEventListener("DOMContentLoaded", function () {
       doc.style.display = (matchText && matchType) ? "" : "none";
     });
   }
+const lists = document.querySelectorAll("ul");
 
+lists.forEach(list => {
+  const items = Array.from(list.querySelectorAll(".document"));
+  items
+    .sort((a, b) => a.innerText.localeCompare(b.innerText))
+    .forEach(item => list.appendChild(item));
+});
   searchInput.addEventListener("input", applyFilters);
 
   buttons.forEach(btn => {
@@ -875,13 +962,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       activeFilter = this.dataset.filter;
       applyFilters();
+const visible = [...documents].filter(d => d.style.display !== "none").length;
+resultCount.textContent = `Documenti trovati: ${visible}`;
     });
   });
 });
 </script>
 </body>
 </html>
-
-
-
-
