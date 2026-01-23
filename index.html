@@ -208,7 +208,7 @@ margin-top: 40px;
   <button class="filter-btn" data-filter="istruzioni">Istruzioni di lavoro</button>
 </div>
  <h1>SCHEDE DI SICUREZZA (SdS), ISTRUZIONI OPERATIVE DI SICUREZZA E PROCEDURE DI SICUREZZA – SELIP Spa</h1>
-<p>PAGINA IN REVISIONE N. 4 DEL 13/01/2026</p>
+<p>PAGINA IN REVISIONE N. 5 DEL 23/01/2026</p>
   <ul>
 <li class="document scheda" 
     data-type="schede"
@@ -945,14 +945,6 @@ document.addEventListener("DOMContentLoaded", function () {
       doc.style.display = (matchText && matchType) ? "" : "none";
     });
   }
-const lists = document.querySelectorAll("ul");
-
-lists.forEach(list => {
-  const items = Array.from(list.querySelectorAll(".document"));
-  items
-    .sort((a, b) => a.innerText.localeCompare(b.innerText))
-    .forEach(item => list.appendChild(item));
-});
   searchInput.addEventListener("input", applyFilters);
 
   buttons.forEach(btn => {
@@ -970,4 +962,5 @@ resultCount.textContent = `Documenti trovati: ${visible}`;
 </script>
 </body>
 </html>
+
 
