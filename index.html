@@ -217,9 +217,14 @@ margin-top: 40px;
 <div class="container">
 
 <div class="site-filter">
-  <button onclick="setSite('tutti')" id="btn-tutti">Tutti</button>
-  <button onclick="setSite('fontanellato')" id="btn-fontanellato"> STABILIMENTO DI FONTANELLATO</button>
-  <button onclick="setSite('ariccia')" id="btn-ariccia">STABILIMENTO DI ARICCIA</button>
+  <button type="button" onclick="setSite('tutti')" id="btn-tutti">Tutti</button>
+  <button type="button" onclick="setSite('fontanellato')" id="btn-fontanellato">
+    FONTANELLATO
+  </button>
+
+  <button type="button" onclick="setSite('ariccia')" id="btn-ariccia">
+    ARICCIA
+  </button>
 </div>
 
 <div class="search-box">
@@ -230,10 +235,27 @@ margin-top: 40px;
 </div> 
 
 <div class="filter-buttons">
-<button class="filter-btn" onclick="setType('tutti')" id="type-tutti">Tutti</button>
-<button class="filter-btn" onclick="setType('scheda')" id="type-scheda">Schede di sicurezza</button>
-<button class="filter-btn" onclick="setType('procedura')" id="type-procedura">Procedure di sicurezza</button>
-<button class="filter-btn" onclick="setType('istruzioni')" id="type-istruzioni">Istruzioni di sicurezza</button>
+
+  <button type="button" class="filter-btn"
+    onclick="setType('tutti')" id="type-tutti">
+    Tutti
+  </button>
+
+  <button type="button" class="filter-btn"
+    onclick="setType('scheda')" id="type-scheda">
+    Schede di Sicurezza
+  </button>
+
+  <button type="button" class="filter-btn"
+    onclick="setType('procedura')" id="type-procedura">
+    Procedure
+  </button>
+
+  <button type="button" class="filter-btn"
+    onclick="setType('istruzioni')" id="type-istruzioni">
+    Istruzioni
+  </button>
+
 </div>
  <h1>SCHEDE DI SICUREZZA (SdS), ISTRUZIONI OPERATIVE DI SICUREZZA E PROCEDURE DI SICUREZZA – SELIP Spa</h1>
 <p>PAGINA IN REVISIONE N. 9 DEL 08/05/2026</p>
