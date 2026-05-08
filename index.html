@@ -17,6 +17,7 @@ gap: 20px;
 background-color: #ff5400;
 color: white;
 padding: 20px;
+margin-bottom: 25px;
 }
 
 header img {
@@ -30,8 +31,30 @@ padding: 20px;
 h2 {
 color: #ff5400;
 border-bottom: 2px solid # ff5400;
-padding-bottom: 5px;
-margin-top: 40px;
+padding-bottom: 25px;
+margin-top: 25px;
+}
+
+.site-filter {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+}
+.site-filter button {
+  padding: 8px 14px;
+  border: 1px solid #2a4d69;
+  background-color: white;
+  color: #2a4d69;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.site-filter button.active {
+  background-color: #e34b00;
+  color: white;
 }
 
 .search-box {
@@ -135,7 +158,6 @@ margin-top: 40px;
   color: #ff5400;
 }
 
-/* Hover (stesso colore ma più scuro) */
 .document.scheda a:hover {
   color: #134a9c;
 }
@@ -194,6 +216,12 @@ margin-top: 40px;
 
 <div class="container">
 
+<div class="site-filter">
+  <button onclick="setSite('tutti')" id="btn-tutti">Tutti</button>
+  <button onclick="setSite('fontanellato')" id="btn-fontanellato"> STABILIMENTO DI FONTANELLATO</button>
+  <button onclick="setSite('ariccia')" id="btn-ariccia">STABILIMENTO DI ARICCIA</button>
+</div>
+
 <div class="search-box">
 <input type="text" id="searchInput" placeholder="Cerca per tipologia/nome prodotto chimico/istruzione o procedura….">
 <p style="color:#555; font-size:0.9em; margin-top:5px;">
@@ -202,115 +230,130 @@ margin-top: 40px;
 </div> 
 
 <div class="filter-buttons">
-  <button class="filter-btn active" data-filter="all">Tutti</button>
-  <button class="filter-btn" data-filter="schede">Schede di sicurezza (SdS)</button>
-  <button class="filter-btn" data-filter="procedure">Procedure</button>
-  <button class="filter-btn" data-filter="istruzioni">Istruzioni di lavoro</button>
+<button class="filter-btn" onclick="setType('tutti')" id="type-tutti">Tutti</button>
+<button class="filter-btn" onclick="setType('scheda')" id="type-scheda">Schede di sicurezza</button>
+<button class="filter-btn" onclick="setType('procedura')" id="type-procedura">Procedure di sicurezza</button>
+<button class="filter-btn" onclick="setType('istruzioni')" id="type-istruzioni">Istruzioni di sicurezza</button>
 </div>
  <h1>SCHEDE DI SICUREZZA (SdS), ISTRUZIONI OPERATIVE DI SICUREZZA E PROCEDURE DI SICUREZZA – SELIP Spa</h1>
 <p>PAGINA IN REVISIONE N. 9 DEL 08/05/2026</p>
   <ul>
 <li class="document scheda" 
+    data-site="fontanellato" 
     data-type="schede"
-    data-search="Accelerante">
+    data-search="Accelerante cobalto nouryon gazechim 36">
 <a href="https://dl.dropboxusercontent.com/scl/fi/bfuxqxf6v1issbm6cy0ze/36_ACCELERATOR-NL-51PN-IT-IT.PDF?rlkey=ankwylnfpardgk9492z7s32v3&st=ecikwm3l&dl=1">ACCELERATOR NL-51PN</a>
 <span>Categoria: Accelerante</span>
 <span> Ultimo aggiornamento: Rev. 2.1 del 19/12/2022</span>
 </li> 
-<li class="document scheda" 
+<li class="document scheda"
+    data-site="entrambi" 
     data-type="schede"
-    data-search="Accelerante Cobalto cobalto">
+    data-search="Accelerante cobalto nachmann 24">
 <a href="https://dl.dropboxusercontent.com/scl/fi/yr1jxdxn2ykosca5muh8h/24_OTTOATO-COBALTO-AL-6-_eSDS_Rev.2_IT.pdf?rlkey=9t4hav0c2m96qbtuym0umgj39&st=23knq3t1&dl=1">OTTOATO COBALTO AL 6%</a>
 <span>Categoria: Accelerante</span>
 <span> Ultimo aggiornamento: Rev. 02 del 06/01/2024</span>
 </li> 
 <li class="document scheda" 
+    data-site="entrambi" 
     data-type="schede"
-    data-search="Catalizzatore">
+    data-search="Catalizzatore nouryon gazechim 21">
 <a href="https://dl.dropboxusercontent.com/scl/fi/1m4v9an3oin46ugww65xb/21_TRIGONOX-61-it-IT_IT.PDF?rlkey=60elaipy4sbs96rrcwmdd77zh&st=m7xoy7ih&dl=1">TRIGONOX 61</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 3 del 26/12/2022</span>
 </li> 
 <li class="document scheda" 
+    data-site="entrambi" 
     data-type="schede"
-    data-search="Catalizzatore">
+    data-search="Catalizzatore promox 45 p200tx 200">
 <a href="https://dl.dropboxusercontent.com/scl/fi/aq0t4c2rmgg7eto6xg7yj/45_P200TX-PROMOX-MSDS.IT-REV.1-2024.PDF?rlkey=ijwhe8lval6kvozf5qt35weef&st=mwkyw11n&dl=1">PROMOX P200TX</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 1 del 09/10/2024</span>
 </li>
-<li class="document scheda" 
+<li class="document scheda"
+    data-site="fontanellato" 
     data-type="schede"
-    data-search="Catalizzatore">
+    data-search="Catalizzatore promox 46 p202tx 202">
 <a href="https://dl.dropboxusercontent.com/scl/fi/zkejhe17b2gcrha1pzpc4/46_P202TX-PROMOX-MSDS.IT-REV.1-2024.PDF?rlkey=7hd8fni8tz28nilfwqu4e685c&st=2f5urrr4&dl=1">PROMOX P202TX</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 1 del 22/02/2024</span>
 </li>
 <li class="document scheda" 
+    data-site="entrambi"
     data-type="schede"
-    data-search="Catalizzatore">
+    data-search="Catalizzatore promox 48 p250tx 250">
 <a href="https://dl.dropboxusercontent.com/scl/fi/vbcqmvojy8o7x7cacdpff/48_P250TX-PROMOX-MSDS.IT-REV.1-2024.PDF?rlkey=feke4a6mz99wm4xf7vmkn877b&st=oopei9rw&dl=1">PROMOX P250TX</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 1 del 21/02/2024</span>
 </li>
 <li class="document scheda" 
     data-type="schede"
-    data-search="Catalizzatore">
+    data-site="entrambi"
+    data-search="Catalizzatore luperox arkema t&t 3 bpo a75e">
 <a href="https://dl.dropboxusercontent.com/scl/fi/1koiqmatk8h85zseu1lck/3_LUPEROX-A75-E.pdf?rlkey=anj06zf91tvf8yjg9nmu7j08w&st=4yijqa2y&dl=1">LUPEROX A75</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 5 del 25/03/2022</span>
 </li>
 <li class="document scheda" 
+    data-site="fontanellato"
     data-type="schede"
-    data-search="Catalizzatore">
+    data-search="Catalizzatore nouryon gazechim 4 lpt lpt-in">
 <a href="https://dl.dropboxusercontent.com/scl/fi/tr8kvn2py1ihm03uxbep4/4_BUTANOX-LPT-IN-IT-IT.PDF?rlkey=u69945mckjvrq2vq4tsbga32n&st=23wwvkjb&dl=1">BUTANOX LPT-IN</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 4 del 17/03/2022</span>
 </li>
 <li class="document scheda" 
+    data-site="fontanellato" 
     data-type="schede"
-    data-search="Catalizzatore">
+    data-search="Catalizzatore nouryon gazechim 5 m50 m-50">
 <a href="https://dl.dropboxusercontent.com/scl/fi/yr83r8zwbqikvr4456i8m/5_BUTANOX-M-50-IT-IT-1.PDF?rlkey=724jn5rmoa2dla6nrgybpqctz&st=88ke69sv&dl=1">BUTANOX M50</a>
 <span>Categoria: Catalizzatore</span>
 <span> Ultimo aggiornamento: Rev. 3 del 13/04/2023</span>
 </li>
-<li class="document scheda" 
+<li class="document scheda"
+    data-site="entrambi" 
     data-type="schede"
-    data-search="Cera distaccante">
+    data-search="Cera distaccante 30 elantas t&t z14lc z14">
 <a href="https://dl.dropboxusercontent.com/scl/fi/ixvqh16h81526edg28c8m/30_Z-14-LC-distacc.pasta.PDF?rlkey=dm5ulp22madigit6apl3vcnwo&st=53cchj9k&dl=1">CERA Z14 LC</a>
 <span>Categoria: Cera distaccante</span>
 <span> Ultimo aggiornamento: Rev. 9 del 27/10/2022</span>
 </li>
-<li class="document scheda" 
+<li class="document scheda"
+    data-site="fontanellato" 
     data-type="schede"
-    data-search="Cera distaccante">
+    data-search="Cera distaccante chemtrend 31 chemlease pmr-90ez pmr-90">
 <a href="https://dl.dropboxusercontent.com/scl/fi/h6gdgrkewhvb75gpq3w0i/31_SDS_Chemlease_PMR-90_EZ_111664_IT_IT.pdf?rlkey=zllypgnd4uhw0rbqdhaoy8ga7&st=9fmllhht&dl=1">CHEMLEASE PMR-90</a>
 <span>Categoria: Cera distaccante Fondi</span>
 <span> Ultimo aggiornamento: Rev. 2.5 del 30/11/2022</span>
 </li>
-<li class="document scheda" 
+<li class="document scheda"
+    data-site="fontanellato" 
     data-type="schede"
-    data-search="Cera distaccante fondi">
+    data-search="Cera distaccante fondi chemtrend 32 chemlease sealer 15ez 15">
 <a href="https://dl.dropboxusercontent.com/scl/fi/v9tay01hgjp6eep9h5brn/32_SDS_Chemlease_15_Sealer_EZ_111663_IT2024.PDF?rlkey=hoiu50sau5m2f550d81k70k62&st=567o1jdi&dl=1">CHEMLEASE 15 SEALER EZ</a>
 <span>Categoria: Cera distaccante Fondi</span>
 <span> Ultimo aggiornamento: Rev. 2.7 del 28/10/2024</span>
 </li>
-<li class="document scheda" 
+<li class="document scheda"
+    data-site="fontanellato" 
     data-type="schede"
-    data-search="Cera distaccante">
+    data-search="Cera distaccante pva blu pvablu polivinilico fontana chemtrend 35">
 <a href="https://dl.dropboxusercontent.com/scl/fi/dmtx40qj29clolnfl8aao/35_MSDS_46678_-it_IT_Release-Lacquer-PVA-Blue.pdf?rlkey=agdu3o9rn5su9g9irtrt2c7za&st=2qfmd5f1&dl=1">PVA BLU</a>
 <span>Categoria: Distaccante Polivinilico</span>
 <span> Ultimo aggiornamento: Rev. 5 del 30/03/2024</span>
 </li>
-<li class="document scheda" 
+<li class="document scheda"
+    data-site="fontanellato" 
     data-type="schede"
-    data-search="Cera distaccante stampi">
+    data-search="Cera distaccante stampi tr-104 tr industries resintex">
 <a href="https://dl.dropboxusercontent.com/scl/fi/1p4flef6s9nuztz0wb0dp/53_TR-100-Mold-Release-SDS_ITALY-Italian_.pdf?rlkey=814vv7rxpfaua5gzfqk5rflj3&st=cp5dxey4&dl=1">TR-104</a>
 <span>Categoria: Distaccante per stampi</span>
 <span> Ultimo aggiornamento: Rev. 3 del 25/05/2023</span>
 </li>
-<li class="document scheda" 
+<li class="document scheda"
+    data-site="entrambi" 
     data-type="schede"
-    data-search="Fibra di vetro">
+    data-search="Fibra di vetro freudemberg t1772 1772">
 <a href="https://dl.dropboxusercontent.com/scl/fi/em1dp3zmjqhyz52s64gox/15_TSIS-T-1772-IT-2023-07.pdf?rlkey=g6szfvdmmer26x2bm31anaq54&st=nh8084w9&dl=1">FIBRA DI VETRO T 1772</a>
 <span>Categoria: Fibra di Vetro</span>
 <span> Ultimo aggiornamento: Rev. 3 del 06/07/2023</span>
